@@ -1,0 +1,86 @@
+REPOSITORY LICENSING NOTICE
+
+Copyright (c) 2025–2026 Li Xiang (李响)
+
+This repository contains software, documentation, media, and third-party
+material. Different terms apply to each category as described below.
+
+==========================================================================
+1. ORIGINAL SOFTWARE AND CONFIGURATION — MIT LICENSE
+==========================================================================
+
+The following MIT License applies to original source code, launch files,
+robot descriptions, scripts, and configuration files created by Li Xiang.
+
+MIT License
+
+Copyright (c) 2025–2026 Li Xiang (李响)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+==========================================================================
+2. ORIGINAL DOCUMENTATION AND MEDIA — CC BY 4.0
+==========================================================================
+
+Original reports, README files, written instructions, manuals, diagrams,
+photographs, screenshots, and other original media created by Li Xiang are
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+Canonical license URL:
+https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt this material for any purpose, including commercial
+purposes, provided that you give appropriate credit to Li Xiang, include a
+link to the license, and indicate whether changes were made. You may not imply
+that the author endorses you or your use.
+
+Suggested attribution:
+
+  “ROS Mobile Robot SLAM and Autonomous Navigation: A 10-Week Experimental
+  Reproduction Record” by Li Xiang, licensed under CC BY 4.0. Changes, if any,
+  must be indicated.
+
+==========================================================================
+3. EXCLUDED MATERIAL
+==========================================================================
+
+The licenses above do not apply to material that Li Xiang does not own or is
+not authorized to relicense, including but not limited to:
+
+- course or laboratory task requirements and assignment PDFs;
+- third-party source code, packages, tutorials, documentation, or datasets;
+- ROS, Gazebo, RViz, Gmapping, hardware-vendor interfaces, names, and logos;
+- screenshots or files containing third-party software, products, trademarks,
+  or other protected material; and
+- any file that contains its own copyright or license notice.
+
+Such material remains subject to the rights and terms of its respective
+copyright holder. Its presence in this repository does not grant any
+additional permission.
+
+==========================================================================
+4. NO ENDORSEMENT
+==========================================================================
+
+This is an independent educational reproduction record. It is not an official
+repository of any course provider, laboratory, institution, ROS project, or
+hardware vendor, and no endorsement is implied.
+
+See THIRD_PARTY_NOTICES.md for additional scope and attribution information.
