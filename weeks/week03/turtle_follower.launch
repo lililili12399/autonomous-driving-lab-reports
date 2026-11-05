@@ -1,0 +1,24 @@
+<launch>
+  <!-- 启动第一只乌龟，命名空间为turtle1，节点名为turtlesim_node1 -->
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node1" namespace="turtle1">
+    <param name="turtle_name" value="turtle1" />
+    <param name="x" value="2.0" />
+    <param name="y" value="2.0" />
+  </node>
+  
+  <!-- 启动第二只乌龟，命名空间为turtle2，节点名为turtlesim_node2 -->
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node2" namespace="turtle2">
+    <param name="turtle_name" value="turtle2" />
+    <param name="x" value="8.0" />
+    <param name="y" value="8.0" />
+  </node>
+  
+  <!-- 启动键盘控制节点，控制turtle1 -->
+  <node pkg="turtlesim" type="turtle_teleop_key" name="teleop_key" output="screen">
+    <remap from="cmd_vel" to="/turtle1/turtle1/cmd_vel" />
+  </node>
+  
+  <!-- 启动跟随节点 -->
+  <node pkg="turtle_follower" type="follower_node.py" name="follower_node" output="screen" />
+</launch>
+

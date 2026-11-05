@@ -1,0 +1,9 @@
+<launch>
+    <!-- 启动turtlesim节点 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+    
+    <!-- 生成第二只乌龟（turtle2） -->
+    <node pkg="rosservice" type="rosservice" name="spawn_turtle2" args="call --wait /spawn 2 2 0 'turtle2'"/>
+</launch>
+
+

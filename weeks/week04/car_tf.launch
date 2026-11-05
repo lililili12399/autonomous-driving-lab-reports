@@ -1,0 +1,16 @@
+<launch>
+  <!-- 1. 加载URDF到参数服务器 -->
+  <param name="robot_description" 
+         command="$(find xacro)/xacro '$(find my_car_urdf)/urdf/two_wheeled_car.urdf'" />
+
+  <!-- 2. 启动robot_state_publisher（发布TF） -->
+  <node name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher" />
+
+  <!-- 3. 启动joint_state_publisher（发布关节状态） -->
+  <node name="joint_state_publisher" 
+        pkg="joint_state_publisher" 
+        type="joint_state_publisher" />
+</launch>
+

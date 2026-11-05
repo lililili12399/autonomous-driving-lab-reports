@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<robot name="two_wheeled_car">
+
+  <!-- 1. 定义base_link（小车主体） -->
+  <link name="base_link">
+    <!-- 可视化部分：用长方体表示小车车身 -->
+    <visual>
+      <geometry>
+        <box size="0.4 0.2 0.1"/> <!-- 长0.4m、宽0.2m、高0.1m -->
+      </geometry>
+      <material name="yellow">
+        <color rgba="1 0.8 0 1"/> <!-- 黄色，透明度1 -->
+      </material>
+    </visual>
+  </link>
+
+  <!-- 2. 定义left_wheel（左车轮） -->
+  <link name="left_wheel">
+    <!-- 可视化部分：用圆柱体表示车轮 -->
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.08"/> <!-- 厚度0.05m、半径0.08m -->
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/> <!-- 黑色 -->
+      </material>
+    </visual>
+  </link>
+
+  <!-- 3. 定义right_wheel（右车轮） -->
+  <link name="right_wheel">
+    <!-- 可视化部分：和左车轮一致 -->
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.08"/>
+      </geometry>
+      <material name="black"/> <!-- 复用black材质 -->
+    </visual>
+  </link>
+
+  <!-- 4. 连接left_wheel到base_link的joint -->
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <!-- 车轮相对于车身的位置：车身左侧、底部（对齐车身高度） -->
+    <origin xyz="0 -0.1 -0.05" rpy="0 1.5708 0"/> <!-- rpy转90度让圆柱立起来 -->
+    <axis xyz="0 1 0"/> <!-- 车轮旋转轴为y轴（左右方向） -->
+  </joint>
+
+  <!-- 5. 连接right_wheel到base_link的joint -->
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <!-- 车轮相对于车身的位置：车身右侧、底部 -->
+    <origin xyz="0 0.1 -0.05" rpy="0 1.5708 0"/>
+    <axis xyz="0 1 0"/> <!-- 同左车轮旋转轴 -->
+  </joint>
+
+</robot>
+

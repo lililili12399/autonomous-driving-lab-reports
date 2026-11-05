@@ -1,0 +1,44 @@
+# macOS / editors
+.DS_Store
+._*
+.vscode/
+.idea/
+*~
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ROS / Catkin generated files
+build/
+devel/
+install/
+log/
+.catkin_tools/
+
+# Large generated or captured data
+*.bag
+*.bag.active
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Materials that require separate permission review
+private/
+course_materials/
+internal_materials/
+*任务要求*
+*组员*汇总*
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
